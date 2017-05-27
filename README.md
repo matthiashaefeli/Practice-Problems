@@ -153,8 +153,15 @@ def is_power_of_two?(num)
 end
 #-----------------------------------------------------
 # 11
-
-
+# Write a method that takes an array of numbers in. Your method should
+# return the third greatest number in the array. You may assume that
+# the array has at least three numbers in it.
+def third_greatest(nums)
+  result = nums.sort
+  return result[-3]
+end
+#-----------------------------------------------------
+# 12
 
 
 
