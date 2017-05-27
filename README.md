@@ -53,6 +53,35 @@ def sum_nums(num)
 end
 #-----------------------------------------------------
 # 5
+# Write a method that will take in a number of minutes, and returns a
+# string that formats the number into `hours:minutes`.
+def time_conversion(minutes)
+    t = Time.at(minutes*60)
+   r = t.strftime("%H:%M")
+   r.slice!(0)
+  p r
+end
+#-----------------------------------------------------
+# 6
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
