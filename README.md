@@ -110,6 +110,30 @@ end
 end
 #-----------------------------------------------------
 # 9
+# Write a method that takes an array of numbers. If a pair of numbers
+# in the array sums to zero, return the positions of those two numbers.
+# If no pair of numbers sums to zero, return `nil`.
+def two_sum(nums)
+  i = 0
+  while i < nums.length
+    i2 = i + 1
+    while i2 < nums.length
+      if nums[i] + nums[i2] == 0
+        return [i, i2]
+      end
+      i2 += 1
+    end
+    i += 1
+  end
+  return nil
+end
+#-----------------------------------------------------
+# 10 
+
+
+
+
+
 
 
 
