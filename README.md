@@ -91,8 +91,25 @@ def palindrome?(string)
 end
 #-----------------------------------------------------
 # 8
-
-
+# Write a method that takes a string in and returns true if the letter
+# "z" appears within three letters **after** an "a". You may assume
+# that the string contains only lowercase letters.
+  array = string.split('')
+  index = 0 
+  while index < array.length 
+    if array[index]  == 'a'
+      if array[index+1] == 'z' || array[index+2] == 'z' || array[index+3] == 'z'
+        return true
+      else
+         index += 1
+      end
+    else 
+       index += 1
+    end
+  end 
+end
+#-----------------------------------------------------
+# 9
 
 
 
