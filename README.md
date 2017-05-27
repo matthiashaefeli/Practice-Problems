@@ -63,6 +63,21 @@ def time_conversion(minutes)
 end
 #-----------------------------------------------------
 # 6
+# Write a method that takes a string and returns the number of vowels
+# in the string. You may assume that all the letters are lower cased.
+# You can treat "y" as a consonant.
+def count_vowels(string)
+  result = 0
+  vowel = ['a','e','i','o','u']
+  string.split('').each do |letter|
+    if vowel.include?(letter)
+      result += 1 
+    end
+  end
+  return result
+end
+#-----------------------------------------------------
+# 7
 
 
 
