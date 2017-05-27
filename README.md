@@ -19,3 +19,14 @@ end
 # n*(n-1)*(n-2)*...*2*1. Assume n >= 0.
 #
 # As a special case, `factorial(0) == 1`.
+
+def factorial(n)
+  result = 1
+  while n > 0
+    result = result * n
+    n -= 1
+  end
+  return result
+end
+#-----------------------------------------------------
+3
