@@ -40,4 +40,37 @@ def longest_word(sentence)
   result[-1]
 end
 #-----------------------------------------------------
-4
+# 4
+# Write a method that takes in an integer `num` and returns the sum of
+# all integers between zero and num, up to and including `num`.
+def sum_nums(num)
+  result = 0 
+  until num == 0 
+    result += num 
+    num-=1
+  end
+  return result
+end
+#-----------------------------------------------------
+# 5
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
