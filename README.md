@@ -162,9 +162,25 @@ def third_greatest(nums)
 end
 #-----------------------------------------------------
 # 12
-
-
-
+# Write a method that takes in a string. Your method should return the
+# most common letter in the array, and a count of how many times it
+# appears.
+def most_common_letter(string)
+  result = [0, 1]
+  i = 0
+  while i < string.length
+    if result[1] < string.count(string[i])
+      result[0] = string[i]
+      result[1] = string.count(string[i])
+      i += 1 
+    else
+      i += 1  
+    end
+   return result
+  end
+end
+#-----------------------------------------------------
+# 13
 
 
 
