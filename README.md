@@ -288,7 +288,16 @@ def nth_prime(n)
 end
 #-----------------------------------------------------
 # 18 
-
+# Write a method that takes in a string of lowercase letters (no
+# uppercase letters, no repeats). Consider the *substrings* of the
+# string: consecutive sequences of letters contained inside the string.
+# Find the longest such string of letters that is a palindrome.
+#
+# Note that the entire string may itself be a palindrome.
+#
+# You may want to use Array's `slice(start_index, length)` method,
+# which returns a substring of length `length` starting at index
+# `start_index`:
 
 
 
