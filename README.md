@@ -181,7 +181,32 @@ def most_common_letter(string)
 end
 #-----------------------------------------------------
 # 13
-
+# Write a method that takes in a number and returns a string, placing
+# a single dash before and after each odd digit. There is one
+# exception: don't start or end the string with a dash.
+#
+# You may wish to use the `%` modulo operation; you can see if a number
+# is even if it has zero remainder when divided by two.
+def dasherize_number(num)
+  string_number = num.to_s
+  result_string = ""
+  i = 0 
+  while i < string_number.length 
+    number = string_number[i].to_i 
+    if i > 0 
+      prev_number = string_number[i-1].to_i 
+      if 
+        prev_number%2 == 1 || number%2 == 1 
+        result_string += "-"
+      end 
+    end 
+    result_string += string_number[i]
+    i += 1
+  end 
+  return result_string
+end
+#-----------------------------------------------------
+# 14
 
 
 
