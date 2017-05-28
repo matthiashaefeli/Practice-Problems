@@ -224,9 +224,18 @@ def capitalize_words(string)
 end
 #-----------------------------------------------------
 # 15 
-
-
-
+# Write a method that takes in a string and an array of indices in the
+# string. Produce a new string, which contains letters from the input
+# string in the order specified by the indices of the array of indices.
+def scramble_string(string, positions)
+  string_array = []
+  positions.each do |number|
+    string_array << string[number]
+  end 
+  return string_array.join('')
+end
+#-----------------------------------------------------
+# 16 
 
 
 
