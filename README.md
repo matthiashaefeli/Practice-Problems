@@ -322,7 +322,21 @@ def longest_palindrome(string)
 end
 #-----------------------------------------------------
 # 19
-
+# Write a method that takes in two numbers. Return the greatest
+# integer that evenly divides both numbers. You may wish to use the
+# `%` modulo operation.
+def greatest_common_factor(number1, number2)
+  index = number1
+  while index > 0  
+    if (number2%index == 0) && (number1%index == 0)
+      return index
+    else 
+      index -= 1 
+    end 
+  end 
+end
+#-----------------------------------------------------
+# 20
 
 
 
