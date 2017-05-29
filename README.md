@@ -298,7 +298,30 @@ end
 # You may want to use Array's `slice(start_index, length)` method,
 # which returns a substring of length `length` starting at index
 # `start_index`:
-
+# this solution is not working please check again !!!!!!!!!!!!!!!!!!!!!!!!
+def longest_palindrome(string)
+  index = 0 
+  index2 = -1
+  result = ""
+  while index < string.length 
+      if string[index..index2] == string[index..index2].reverse
+      if result.length < string[index..index2].length
+        result = string[index..index2]
+      index += 1
+      else 
+        if string[index+1] == string[index2]
+          p 'hello'
+          index2 = -1
+          index += 1 
+        else
+          p string[index..index2]
+        index2 -= 1 
+        end 
+      end
+    end
+end
+#-----------------------------------------------------
+# 19
 
 
 
