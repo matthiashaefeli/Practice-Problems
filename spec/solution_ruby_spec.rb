@@ -179,13 +179,32 @@ describe Solution do
 			expect(solution.dasherize_number(303)).to eq "3-0-3"
 		end
 	end
-	
 
+	describe "capitalize first words" do 
 
+		it "capitalizes the first letter of each word." do 
+			expect(solution.capitalize_words("this is a sentence")).to eq "This Is A Sentence"
+		end
 
+		it "capitalizes the first letter of each word." do 
+			expect(solution.capitalize_words("mike bloomfield")).to eq "Mike Bloomfield"
+		end
+	end
+
+	describe "scramble string" do 
+
+		it "roduce a new string, which contains letters from the input
+				 string in the order specified by the indices of the array of indices." do 
+			expect(solution.scramble_string("abcd", [3, 1, 2, 0])).to eq "dbca"
+		end
+
+		it "roduce a new string, which contains letters from the input
+				 string in the order specified by the indices of the array of indices." do 
+			expect(solution.scramble_string("markov", [5, 3, 1, 4, 2, 0])).to eq "vkaorm"
+		end
+	end
 
 
 
 
 end
-

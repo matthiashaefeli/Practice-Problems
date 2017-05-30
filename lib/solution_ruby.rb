@@ -149,6 +149,23 @@ class Solution
 	  return result_string
 	end
 
+	def capitalize_words(string)
+	  string_array = string.split(' ')
+	  string_array.map! do |word|
+	    word.capitalize
+	  end 
+	  result = string_array.join(' ')
+	 return result 
+	end
+
+	def scramble_string(string, positions)
+	  string_array = []
+	  positions.each do |number|
+	    string_array << string[number]
+	  end 
+	  return string_array.join('')
+	end
+
 
 
 end
