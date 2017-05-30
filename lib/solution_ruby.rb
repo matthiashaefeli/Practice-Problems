@@ -1,3 +1,5 @@
+require "pry"
+
 class Solution
 
 	def reverse(string)
@@ -30,4 +32,28 @@ class Solution
 	  end
 	  return result
 	end
+
+	def time_conversion(minutes)
+		# Time.at(minutes).utc.strftime("%M:%S")
+		hh, mm = minutes.divmod(60)
+		if mm < 10 
+			m = "0" + mm.to_s
+		else
+			m = mm.to_s
+		end
+		return hh.to_s + ":" + m
+	end
+
+	def count_vowels(string)
+	  result = 0
+	  vowel = ['a','e','i','o','u','A', 'E', 'I', 'O', 'U']
+	  string.split('').each do |letter|
+	    if vowel.include?(letter)
+	      result += 1 
+	    end
+	  end
+	  return result
+	end
+
+
 end

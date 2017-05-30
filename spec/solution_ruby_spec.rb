@@ -55,6 +55,33 @@ describe Solution do
 		end
 	end
 
+	describe "time convercion" do 
+
+		it "thakes a number of minutes, and returns a string that formats the number into `hours:minutes`." do 
+			expect(solution.time_conversion(15)).to eq "0:15"
+		end
+
+		it "thakes a number of minutes, and returns a string that formats the number into `hours:minutes`." do 
+			expect(solution.time_conversion(150)).to eq "2:30"
+		end
+
+		it "thakes a number of minutes, and returns a string that formats the number into `hours:minutes`." do 
+			expect(solution.time_conversion(360)).to eq "6:00"
+		end
+	end
+
+	describe "count vowels" do 
+
+		it "takes a string and returns the number of vowels in the string" do 
+			expect(solution.count_vowels("hello world")).to eq 3
+		end
+
+		it "takes a string and returns the number of vowels in the string" do 
+			expect(solution.count_vowels("This is my new I")).to eq 4
+		end
+	end
+
+
 
 
 end
