@@ -80,4 +80,75 @@ class Solution
 	  return false
 	end
 
+	def two_sum(nums)
+	  i = 0
+	  while i < nums.length
+	    i2 = i + 1
+	    while i2 < nums.length
+	      if nums[i] + nums[i2] == 0
+	        return [i, i2]
+	      end
+	      i2 += 1
+	    end
+	    i += 1
+	  end
+	  return nil
+	end
+
+	def is_power_of_two?(num)
+	  if num < 1
+	    return false
+	  end
+	  while true
+	    if num == 1
+	      return true
+	    elsif num % 2 == 0
+	      num = num / 2
+	    else
+	      return false
+	    end
+	  end
+	end
+
+	def third_greatest(nums)
+	  result = nums.sort.uniq
+	  return result[-3]
+	end
+
+	def most_common_letter(string)
+	  result = [0, 1]
+	  i = 0
+	  while i < string.length
+	    if result[1] < string.count(string[i])
+	      result[0] = string[i]
+	      result[1] = string.count(string[i])
+	      i += 1 
+	    else
+	      i += 1  
+	    end
+	   return result
+	  end
+	end
+
+	def dasherize_number(num)
+		string_number = num.to_s
+	  result_string = ""
+	  i = 0 
+	  while i < string_number.length 
+	    number = string_number[i].to_i 
+	    if i > 0 
+	      prev_number = string_number[i-1].to_i 
+	      if 
+	        prev_number%2 == 1 || number%2 == 1 
+	        result_string += "-"
+	      end 
+	    end 
+	    result_string += string_number[i]
+	    i += 1
+	  end 
+	  return result_string
+	end
+
+
+
 end
