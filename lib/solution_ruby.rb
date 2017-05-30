@@ -227,6 +227,19 @@ class Solution
 	end
 
 	def caesar_cipher(number, string)
+		alphabet = ("a".."z").to_a
+		result_string = ""
+		string.split("").each do |letter|
+			index_letter = alphabet.index(letter)
+			new_index = index_letter + number
+			if new_index > alphabet.length
+				dif_index = new_index - alphabet.length
+				result_string << alphabet[dif_index] 
+			else
+				result_string << alphabet[new_index]
+			end
+		end
+		return result_string
 	end
 
 	def num_repeats(string)
