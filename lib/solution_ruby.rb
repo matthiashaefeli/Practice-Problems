@@ -166,6 +166,38 @@ class Solution
 	  return string_array.join('')
 	end
 
+	def is_prime?(number)
+	  if number <= 1
+	    return false
+	  end
+
+	  idx = 2
+	  while idx < number
+	    if number % idx == 0
+	      return false
+	    end
+	    idx += 1
+	  end
+	  return true
+	end
+
+	def nth_prime(n)
+	  prime_array = []
+	  i = 1
+	  while prime_array.length < n 
+	    if is_prime?(i)
+	      prime_array << i
+	      i += 1
+	    else 
+	      i += 1
+	    end 
+	  end
+	   return prime_array[-1]
+	end
+
+
+
+
 
 
 end

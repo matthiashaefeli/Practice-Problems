@@ -193,16 +193,48 @@ describe Solution do
 
 	describe "scramble string" do 
 
-		it "roduce a new string, which contains letters from the input
+		it "produce a new string, which contains letters from the input
 				 string in the order specified by the indices of the array of indices." do 
 			expect(solution.scramble_string("abcd", [3, 1, 2, 0])).to eq "dbca"
 		end
 
-		it "roduce a new string, which contains letters from the input
+		it "produce a new string, which contains letters from the input
 				 string in the order specified by the indices of the array of indices." do 
 			expect(solution.scramble_string("markov", [5, 3, 1, 4, 2, 0])).to eq "vkaorm"
 		end
 	end
+
+	describe "is prime" do 
+
+		it "return true if its a prime" do 
+			expect(solution.is_prime?(2)).to eq true
+		end
+
+		it "return true if its a prime" do 
+			expect(solution.is_prime?(3)).to eq true
+		end
+
+		it "return false if its a prime" do 
+			expect(solution.is_prime?(4)).to eq false
+		end
+
+		it "return false if its a prime" do 
+			expect(solution.is_prime?(9)).to eq false
+		end
+	end
+
+	describe "nth prime" do 
+
+		it "returns the `n`th prime number" do 
+			expect(solution.nth_prime(1)).to eq 2
+		end
+
+		it "returns the `n`th prime number" do 
+			expect(solution.nth_prime(5)).to eq 11
+		end
+	end
+	
+
 
 
 
