@@ -233,10 +233,78 @@ describe Solution do
 			expect(solution.nth_prime(5)).to eq 11
 		end
 	end
-	
 
 
+	describe "palindrome" do 
+
+		it "Find the longest such string of letters that is a palindrome" do 
+			expect(solution.longest_palindrome("abcbd")).to eq "bcb"
+		end
+
+		it "Find the longest such string of letters that is a palindrome" do 
+			expect(solution.longest_palindrome("abba")).to eq "abba"
+		end
+
+		it "Find the longest such string of letters that is a palindrome" do 
+			expect(solution.longest_palindrome("abcbdeffe")).to eq "effe"
+		end
+	end
+
+	describe "greates common factor" do 
+
+		it "Return the greatest integer that evenly divides both numbers" do 
+			expect(solution.greatest_common_factor(3, 9)).to eq 3
+		end
+
+		it "Return the greatest integer that evenly divides both numbers" do 
+			expect(solution.greatest_common_factor(16, 24)).to eq 8
+		end
+
+		it "Return the greatest integer that evenly divides both numbers" do 
+			expect(solution.greatest_common_factor(3, 5)).to eq 1
+		end
+	end
 
 
+	describe "caesar cipher" do 
 
+		it "takes a string and a number. the number is the next letter in order from alphabet
+				after z starts with a again" do 
+			expect(solution.caesar_cipher(3, "abc")).to eq "def"
+		end
+
+		it "takes a string and a number. the number is the next letter in order from alphabet
+				after z starts with a again" do 
+			expect(solution.caesar_cipher(5, "abc")).to eq "fgh"
+		end
+
+		it "takes a string and a number. the number is the next letter in order from alphabet
+				after z starts with a again" do 
+			expect(solution.caesar_cipher(2, "aabz")).to eq "ccdb"
+		end
+	end
+
+
+	describe "number repeats" do 
+
+		it "returns the number of letters that appear more than once in the string" do 
+			expect(solution.num_repeats("abdbc")).to eq 1
+		end
+
+		it "returns the number of letters that appear more than once in the string" do 
+			expect(solution.num_repeats("aaa")).to eq 1
+		end
+
+		it "returns the number of letters that appear more than once in the string" do 
+			expect(solution.num_repeats("abab")).to eq 2
+		end
+
+		it "returns the number of letters that appear more than once in the string" do 
+			expect(solution.num_repeats("cadac")).to eq 2
+		end
+
+		it "returns the number of letters that appear more than once in the string" do 
+			expect(solution.num_repeats("abcde")).to eq 0
+		end
+	end
 end

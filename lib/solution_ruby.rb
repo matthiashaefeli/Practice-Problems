@@ -195,9 +195,40 @@ class Solution
 	   return prime_array[-1]
 	end
 
+	def longest_palindrome(string)
+	  index = 0 
+	  index2 = -1
+	  result = ""
+	  while index < string.length
+	  	if palindrome?(string[index..index2])
+	  		if result.length < string[index..index2].length
+	  		result = string[index..index2]
+	  		end
+	  	end
+	  	if string[index+1] == string[index2]
+	      index2 = -1
+	      index += 1 
+	    else
+	      index2 -= 1 
+	    end 
+	  end
+	  return result
+	end
 
+	def greatest_common_factor(number1, number2)
+	  index = number1
+	  while index > 0  
+	    if (number2%index == 0) && (number1%index == 0)
+	      return index
+	    else 
+	      index -= 1 
+	    end 
+	  end 
+	end
 
+	def caesar_cipher(number, string)
+	end
 
-
-
+	def num_repeats(string)
+	end
 end
