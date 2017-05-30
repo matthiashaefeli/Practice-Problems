@@ -55,5 +55,29 @@ class Solution
 	  return result
 	end
 
+	def palindrome?(string)
+	  if string == string.reverse
+	    return true
+	  else 
+	    false
+	  end
+	end
+
+	def nearby_az(string)
+	  array = string.split('')
+	  index = 0 
+	  while index < array.length 
+	    if array[index]  == 'a'
+	      if array[index+1] == 'z' || array[index+2] == 'z' || array[index+3] == 'z'
+	        return true
+	      else
+	         index += 1
+	      end
+	    else 
+	       index += 1
+	    end
+	  end 
+	  return false
+	end
 
 end

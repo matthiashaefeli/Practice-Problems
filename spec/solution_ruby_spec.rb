@@ -81,6 +81,41 @@ describe Solution do
 		end
 	end
 
+	describe "Palindrome" do 
+
+		it "takes a string and returns true if it is a palindrome" do 
+			expect(solution.palindrome?("abba")).to eq true
+		end
+
+		it "takes a string and returns true if it is a palindrome" do 
+			expect(solution.palindrome?("there")).to eq false
+		end
+	end
+
+	describe "nearby" do 
+
+		it "takes a string in and returns true if the letter 'z' appears within three letters **after** an 'a' " do 
+			expect(solution.nearby_az("baz")).to eq true
+		end
+
+		it "takes a string in and returns true if the letter 'z' appears within three letters **after** an 'a' " do 
+			expect(solution.nearby_az("babz")).to eq true
+		end
+
+			it "takes a string in and returns true if the letter 'z' appears within three letters **after** an 'a' " do 
+			expect(solution.nearby_az("babbz")).to eq true
+		end
+
+			it "takes a string in and returns true if the letter 'z' appears within three letters **after** an 'a' " do 
+			expect(solution.nearby_az("bbba")).to eq false
+		end
+
+			it "takes a string in and returns true if the letter 'z' appears within three letters **after** an 'a' " do 
+			expect(solution.nearby_az("z")).to eq false
+		end
+	end
+
+
 
 
 
