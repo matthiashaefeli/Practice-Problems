@@ -68,6 +68,11 @@ Solution.prototype.palindrome = function(string){
 	}
 }
 
+Solution.prototype.nearby = function(string){
+	var index = string.indexOf("a")
+	var newString = string.substr(index, 4)
+	return newString.includes("z")
+}
 
 
 

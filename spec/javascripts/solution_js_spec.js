@@ -65,7 +65,24 @@ describe("solutions", function() {
  	solution = new Solution();
  	expect(solution.palindrome("no")).toBe(false)
  });
+ it("takes a string and returns true if the letter z appears within three letters after an a", function(){
+ 	solution = new Solution();
+ 	expect(solution.nearby("baz")).toBe(true)
+ });
+ it("takes a string and returns true if the letter z appears within three letters after an a", function(){
+ 	solution = new Solution();
+ 	expect(solution.nearby("babz")).toBe(true)
+ });
+ it("takes a string and returns true if the letter z appears within three letters after an a", function(){
+ 	solution = new Solution();
+ 	expect(solution.nearby("babbz")).toBe(true)
+ });
+ it("takes a string and returns true if the letter z appears within three letters after an a", function(){
+ 	solution = new Solution();
+ 	expect(solution.nearby("zabb")).toBe(false)
+ });
 })
+
 
 
 
