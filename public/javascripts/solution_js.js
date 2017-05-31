@@ -16,3 +16,24 @@ Solution.prototype.factorial = function(number) {
 		return number * this.factorial(number -1)
 	}
 }
+
+Solution.prototype.longestString = function(string) {
+	var stringArray = string.split(" ")
+	var result = ""
+	stringArray.forEach(function(word){
+		if (result.length < word.length) {
+			result = word
+		}
+	})
+	return result
+}
+
+
+
+
+
+
+
+
+
+
