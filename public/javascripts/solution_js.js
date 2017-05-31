@@ -8,3 +8,11 @@ Solution.prototype.reverse = function(string) {
  	result.unshift(string[i]);  
  	return result.join("");
 }
+
+Solution.prototype.factorial = function(number) {
+	if (number == 0){
+		return 1
+	}else {
+		return number * this.factorial(number -1)
+	}
+}
