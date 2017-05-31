@@ -89,6 +89,14 @@ describe("solutions", function() {
  	solution = new Solution();
  	expect(solution.vowels("This is my new I")).toEqual(4)
  });
+ it("returns the position of a pair of numbers which sums 0", function(){
+ 	solution = new Solution();
+ 	expect(solution.pairs([1, 3, 5, -3])).toEqual([1, 3])
+ });
+  it("returns the position of a pair of numbers which sums 0", function(){
+ 	solution = new Solution();
+ 	expect(solution.pairs([1, 3, 5])).toEqual(undefined)
+ });
 })
 
 

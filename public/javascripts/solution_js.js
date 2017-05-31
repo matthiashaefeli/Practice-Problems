@@ -85,6 +85,10 @@ Solution.prototype.vowels = function(string){
 	return count
 }
 
+Solution.prototype.pairs = function(numbers){
+
+}
+
 
 
 
