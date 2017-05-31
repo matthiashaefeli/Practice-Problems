@@ -74,6 +74,16 @@ Solution.prototype.nearby = function(string){
 	return newString.includes("z")
 }
 
+Solution.prototype.vowels = function(string){
+	var vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"]
+	var count = 0
+	for (var i = 0; i < string.length; i++){
+		if (vowels.includes(string[i])) {
+			count += 1
+		}
+	}
+	return count
+}
 
 
 

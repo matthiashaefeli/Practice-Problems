@@ -81,6 +81,14 @@ describe("solutions", function() {
  	solution = new Solution();
  	expect(solution.nearby("zabb")).toBe(false)
  });
+ it("takes a string and returns the number of vowels in the string", function(){
+ 	solution = new Solution();
+ 	expect(solution.vowels("hello world")).toEqual(3)
+ });
+ it("takes a string and returns the number of vowels in the string", function(){
+ 	solution = new Solution();
+ 	expect(solution.vowels("This is my new I")).toEqual(4)
+ });
 })
 
 
