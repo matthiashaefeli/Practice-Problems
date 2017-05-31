@@ -48,15 +48,23 @@ describe("solutions", function() {
  it("takes a number of minutes and return a string that formats the number into hours and minutes", function(){
  	solution = new Solution();
  	expect(solution.minutesHours(15)).toEqual("0:15")
- })
+ });
  it("takes a number of minutes and return a string that formats the number into hours and minutes", function(){
  	solution = new Solution();
  	expect(solution.minutesHours(150)).toEqual("2:30")
- })
-  it("takes a number of minutes and return a string that formats the number into hours and minutes", function(){
+ });
+ it("takes a number of minutes and return a string that formats the number into hours and minutes", function(){
  	solution = new Solution();
  	expect(solution.minutesHours(360)).toEqual("6:00")
- })
+ });
+ it("takes a string and returns true if it is a palindrome", function(){
+  solution = new Solution();
+  expect(solution.palindrome("abba")).toBe(true)
+ });
+ it("takes a string and returns false if it is not a palindrome", function(){
+ 	solution = new Solution();
+ 	expect(solution.palindrome("no")).toBe(false)
+ });
 })
 
 

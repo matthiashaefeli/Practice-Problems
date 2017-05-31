@@ -56,6 +56,18 @@ Solution.prototype.minutesHours = function(number) {
 	return String(hh) + ":" + finalmm
 }
 
+Solution.prototype.palindrome = function(string){
+	var stringReverse = ""
+	for (var i = string.length-1; i > -1; i--) {
+		stringReverse += string[i]
+	}
+	if (string == stringReverse) {
+		return true
+	}else {
+		return false
+	}
+}
+
 
 
 
