@@ -33,9 +33,17 @@ describe("solutions", function() {
   solution = new Solution();
   expect(solution.longestString("this is the best solution ever")).toEqual("solution")
  });
-  it("takes a string and return the longest word", function(){
+ it("takes a string and return the longest word", function(){
   solution = new Solution();
   expect(solution.longestString("one")).toEqual("one")
+ });
+ it("takes a number and return the sum of all number betweeen zero and this number", function(){
+ 	solution = new Solution();
+ 	expect(solution.sumNumber(5)).toEqual(15)
+ });
+ it("takes a number and return the sum of all number betweeen zero and this number", function(){
+ 	solution = new Solution();
+ 	expect(solution.sumNumber(20)).toEqual(210)
  });
 })
 

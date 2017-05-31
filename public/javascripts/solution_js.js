@@ -28,6 +28,16 @@ Solution.prototype.longestString = function(string) {
 	return result
 }
 
+Solution.prototype.sumNumber = function(number) {
+	var result = number
+	for (var i = 0; i < number; i++){
+		result += i
+	}
+	return result
+}
+
+
+
 
 
 
