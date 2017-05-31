@@ -36,6 +36,27 @@ Solution.prototype.sumNumber = function(number) {
 	return result
 }
 
+Solution.prototype.minutesHours = function(number) {
+	var hh = 0
+	var mm = 0
+	while (number > 0) {
+		if (number >= 60) {
+			hh += 1
+			number = number -60
+		}else {
+			mm = number
+			number = number - number
+		}
+	}
+	if (mm < 10) {
+		finalmm = "0" + String(mm)
+	}else {
+		finalmm = String(mm)
+	}
+	return String(hh) + ":" + finalmm
+}
+
+
 
 
 

@@ -45,6 +45,18 @@ describe("solutions", function() {
  	solution = new Solution();
  	expect(solution.sumNumber(20)).toEqual(210)
  });
+ it("takes a number of minutes and return a string that formats the number into hours and minutes", function(){
+ 	solution = new Solution();
+ 	expect(solution.minutesHours(15)).toEqual("0:15")
+ })
+ it("takes a number of minutes and return a string that formats the number into hours and minutes", function(){
+ 	solution = new Solution();
+ 	expect(solution.minutesHours(150)).toEqual("2:30")
+ })
+  it("takes a number of minutes and return a string that formats the number into hours and minutes", function(){
+ 	solution = new Solution();
+ 	expect(solution.minutesHours(360)).toEqual("6:00")
+ })
 })
 
 
