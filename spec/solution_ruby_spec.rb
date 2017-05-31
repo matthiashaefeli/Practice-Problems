@@ -1,4 +1,4 @@
-require "solution_ruby"
+require "./src/solution_ruby.rb"
 
 describe Solution do
 	solution = Solution.new
