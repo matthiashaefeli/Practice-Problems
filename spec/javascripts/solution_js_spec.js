@@ -97,6 +97,7 @@ describe("solutions", function() {
  	solution = new Solution();
  	expect(solution.pairs([1, 3, 5])).toEqual(undefined)
  });
+  
 })
 
 

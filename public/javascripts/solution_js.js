@@ -86,7 +86,12 @@ Solution.prototype.vowels = function(string){
 }
 
 Solution.prototype.pairs = function(numbers){
-
+	for (var i = 0; i < numbers.length; i++){
+		for (var itwo = 0; itwo < numbers.length; itwo ++){
+			if (numbers[i] + numbers[itwo] == 0)
+			return [i, itwo]
+		}
+	}
 }
 
 
