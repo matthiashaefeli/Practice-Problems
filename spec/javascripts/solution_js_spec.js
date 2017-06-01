@@ -97,7 +97,26 @@ describe("solutions", function() {
  	solution = new Solution();
  	expect(solution.pairs([1, 3, 5])).toEqual(undefined)
  });
-  
+ it("returns true if the given number is a power of two", function(){
+  solution = new Solution();
+  expect(solution.powerOfTwo(1)).toBe(true)
+ });
+ it("returns true if the given number is a power of two", function(){
+  solution = new Solution();
+  expect(solution.powerOfTwo(64)).toBe(true)
+ });
+ it("returns false if the given number is a power of two", function(){
+  solution = new Solution();
+  expect(solution.powerOfTwo(78)).toBe(false)
+ });
+ it("returns false if the given number is a power of two", function(){
+  solution = new Solution();
+  expect(solution.powerOfTwo(0)).toBe(false)
+ });
+  it("returns false if the given number is a power of two", function(){
+  solution = new Solution();
+  expect(solution.powerOfTwo(129)).toBe(false)
+ });
 })
 
 

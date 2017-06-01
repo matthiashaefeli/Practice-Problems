@@ -7,15 +7,15 @@ Solution.prototype.reverse = function(string) {
  	for (var i = 0; i < string.length; i++ )
  	result.unshift(string[i]);  
  	return result.join("");
-}
+};
 
 Solution.prototype.factorial = function(number) {
 	if (number == 0){
 		return 1
 	}else {
 		return number * this.factorial(number -1)
-	}
-}
+	};
+};
 
 Solution.prototype.longestString = function(string) {
 	var stringArray = string.split(" ")
@@ -23,18 +23,18 @@ Solution.prototype.longestString = function(string) {
 	stringArray.forEach(function(word){
 		if (result.length < word.length) {
 			result = word
-		}
-	})
+		};
+	});
 	return result
-}
+};
 
 Solution.prototype.sumNumber = function(number) {
 	var result = number
 	for (var i = 0; i < number; i++){
 		result += i
-	}
+	};
 	return result
-}
+};
 
 Solution.prototype.minutesHours = function(number) {
 	var hh = 0
@@ -54,7 +54,7 @@ Solution.prototype.minutesHours = function(number) {
 		finalmm = String(mm)
 	}
 	return String(hh) + ":" + finalmm
-}
+};
 
 Solution.prototype.palindrome = function(string){
 	var stringReverse = ""
@@ -66,13 +66,13 @@ Solution.prototype.palindrome = function(string){
 	}else {
 		return false
 	}
-}
+};
 
 Solution.prototype.nearby = function(string){
 	var index = string.indexOf("a")
 	var newString = string.substr(index, 4)
 	return newString.includes("z")
-}
+};
 
 Solution.prototype.vowels = function(string){
 	var vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"]
@@ -83,7 +83,7 @@ Solution.prototype.vowels = function(string){
 		}
 	}
 	return count
-}
+};
 
 Solution.prototype.pairs = function(numbers){
 	for (var i = 0; i < numbers.length; i++){
@@ -92,7 +92,23 @@ Solution.prototype.pairs = function(numbers){
 			return [i, itwo]
 		}
 	}
-}
+};
+
+Solution.prototype.powerOfTwo = function(number){
+	if (number < 1){
+		return false
+	}else if (number == 1){
+		return true
+	}else {
+		var square = Math.sqrt(number)
+		if (square%2 == 0) {
+			return true
+		}else {
+			return false
+		}
+	}
+};
+
 
 
 
