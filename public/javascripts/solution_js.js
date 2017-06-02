@@ -109,6 +109,20 @@ Solution.prototype.powerOfTwo = function(number){
 	}
 };
 
+Solution.prototype.thirdBiggest = function(numbers){
+	var uniqueArray = []
+	for (var i = 0; i < numbers.length; i++){
+		if (!uniqueArray.includes(numbers[i])){
+			uniqueArray.push(numbers[i])
+		}
+	}
+	var sortedArray = uniqueArray.sort(function(a, b){ return a - b});
+	return sortedArray.slice(-3)[0]
+};
+
+
+
+
 
 
 

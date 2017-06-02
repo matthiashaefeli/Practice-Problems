@@ -113,9 +113,17 @@ describe("solutions", function() {
   solution = new Solution();
   expect(solution.powerOfTwo(0)).toBe(false)
  });
-  it("returns false if the given number is a power of two", function(){
+ it("returns false if the given number is a power of two", function(){
   solution = new Solution();
   expect(solution.powerOfTwo(129)).toBe(false)
+ });
+ it("returns third biggest number of an given array", function(){
+  solution = new Solution();
+  expect(solution.thirdBiggest([5, 3, 7])).toEqual(3)
+ });
+ it("returns third biggest number of an given array", function(){
+  solution = new Solution();
+  expect(solution.thirdBiggest([3, 7, 12, 45, 89, 89, 76])).toEqual(45)
  });
 })
 
