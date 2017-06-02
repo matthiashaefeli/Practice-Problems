@@ -140,6 +140,20 @@ Solution.prototype.commonLetter = function(string){
 	return [lettertwo, counter]
 };
 
+Solution.prototype.upcase = function(string){
+	var newArray = []
+	var newWord = ""
+	var stringArray = string.split(" ")
+	stringArray.forEach(function(word){
+		newWord = word.charAt(0).toUpperCase() + word.slice(1)
+		newArray.push(newWord)
+	})
+	return newArray.join(" ")
+};
+
+
+
+
 
 
 

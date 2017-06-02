@@ -133,6 +133,14 @@ describe("solutions", function() {
   solution = new Solution();
   expect(solution.commonLetter("staff or not staff")).toEqual(["f", 4])
  });
+ it("returns all words of a given string with the first letter upcase", function(){
+  solution = new Solution();
+  expect(solution.upcase("this is a sentence")).toEqual("This Is A Sentence")
+ });
+ it("returns all words of a given string with the first letter upcase", function(){
+  solution = new Solution();
+  expect(solution.upcase("babiloon hope")).toEqual("Babiloon Hope")
+ });
 })
 
 
