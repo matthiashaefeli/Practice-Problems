@@ -141,6 +141,14 @@ describe("solutions", function() {
   solution = new Solution();
   expect(solution.upcase("babiloon hope")).toEqual("Babiloon Hope")
  });
+ it("produce a new string, which contains letters from the input string in the order specified by the indices of the array of indices.", function(){
+  solution = new Solution();
+  expect(solution.stringOrder("abcd", [3, 1, 2, 0])).toEqual("dbca")
+ });
+ it("produce a new string, which contains letters from the input string in the order specified by the indices of the array of indices.", function(){
+  solution = new Solution();
+  expect(solution.stringOrder("markov", [5, 3, 1, 4, 2, 0])).toEqual("vkaorm")
+ });
 })
 
 

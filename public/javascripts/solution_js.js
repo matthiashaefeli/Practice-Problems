@@ -151,6 +151,14 @@ Solution.prototype.upcase = function(string){
 	return newArray.join(" ")
 };
 
+Solution.prototype.stringOrder = function(string, array){
+	var newString = ""
+	for (var i = 0; i < string.length; i++){
+		newString += string[array[i]]
+	}
+	return newString
+};
+
 
 
 
