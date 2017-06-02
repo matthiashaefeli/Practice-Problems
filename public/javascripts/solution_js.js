@@ -120,7 +120,25 @@ Solution.prototype.thirdBiggest = function(numbers){
 	return sortedArray.slice(-3)[0]
 };
 
-
+Solution.prototype.commonLetter = function(string){
+	var letter = ""
+	var lettertwo = ""
+	var counter = 0
+	for (var i = 0; i < string.length; i++){
+		var count = 0
+		for (var itwo = 0; itwo < string.length; itwo++){
+			if (string[i] == string[itwo]){
+				count += 1
+				letter = string[i]
+			}
+		}
+		if (counter < count){
+			counter = count
+			lettertwo = letter
+		}
+	}
+	return [lettertwo, counter]
+};
 
 
 

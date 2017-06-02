@@ -125,6 +125,14 @@ describe("solutions", function() {
   solution = new Solution();
   expect(solution.thirdBiggest([3, 7, 12, 45, 89, 89, 76])).toEqual(45)
  });
+ it("returns most common letter and acount how many times it apears in a given string", function(){
+  solution = new Solution();
+  expect(solution.commonLetter("abca")).toEqual(["a", 2])
+ });
+ it("returns most common letter and acount how many times it apears in a given string", function(){
+  solution = new Solution();
+  expect(solution.commonLetter("staff or not staff")).toEqual(["f", 4])
+ });
 })
 
 
