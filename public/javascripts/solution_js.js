@@ -169,8 +169,15 @@ for(var i = 2; i < number; i++) {
 };
 
 
-
-
+Solution.prototype.ntPrime = function(number){
+	var primeArray = []
+	for (var i = 2; primeArray.length < number; i++){
+		if (this.prime(i) == true) {
+			primeArray.push(i)
+		}
+	}
+	return primeArray[number-1]
+};
 
 
 

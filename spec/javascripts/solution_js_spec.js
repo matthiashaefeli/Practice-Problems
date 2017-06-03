@@ -165,7 +165,15 @@ describe("solutions", function() {
   solution = new Solution();
   expect(solution.prime(9)).toBe(false)
  });
+ it("return the n'th number of prime", function(){
+  solution = new Solution();
+  expect(solution.ntPrime(1)).toEqual(2)
+ });
 })
+ it("return the n'th number of prime", function(){
+  solution = new Solution();
+  expect(solution.ntPrime(5)).toEqual(11)
+ });
 
 
 
