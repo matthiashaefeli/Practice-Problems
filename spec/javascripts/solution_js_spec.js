@@ -149,6 +149,22 @@ describe("solutions", function() {
   solution = new Solution();
   expect(solution.stringOrder("markov", [5, 3, 1, 4, 2, 0])).toEqual("vkaorm")
  });
+ it("return true if a given number is a prime", function(){
+  solution = new Solution();
+  expect(solution.prime(2)).toBe(true)
+ });
+ it("return true if a given number is a prime", function(){
+  solution = new Solution();
+  expect(solution.prime(3)).toBe(true)
+ });
+ it("return true if a given number is a prime", function(){
+  solution = new Solution();
+  expect(solution.prime(4)).toBe(false)
+ });
+ it("return true if a given number is a prime", function(){
+  solution = new Solution();
+  expect(solution.prime(9)).toBe(false)
+ });
 })
 
 

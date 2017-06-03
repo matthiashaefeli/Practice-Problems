@@ -111,9 +111,6 @@ def dasherize_number(num)
 # of `6 % 2`, since 2 evenly divides 6 with no remainder, `6 % 2 == 0`.
 # More generally, if `m` and `n` are integers, `m % n == 0` if and only
 # if `n` divides `m` evenly.
-#
-# You would not be expected to already know about modulo for the
-# challenge.
 
 #-----------------------------------------------------
 # 17

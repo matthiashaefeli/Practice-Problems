@@ -159,6 +159,19 @@ Solution.prototype.stringOrder = function(string, array){
 	return newString
 };
 
+Solution.prototype.prime = function(number){
+for(var i = 2; i < number; i++) {
+        if(number % i === 0) {
+            return false;
+        }
+    }
+    return number > 1;
+};
+
+
+
+
+
 
 
 
