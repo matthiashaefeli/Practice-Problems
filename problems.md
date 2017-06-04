@@ -125,10 +125,6 @@ def dasherize_number(num)
 # Find the longest such string of letters that is a palindrome.
 #
 # Note that the entire string may itself be a palindrome.
-#
-# You may want to use Array's `slice(start_index, length)` method,
-# which returns a substring of length `length` starting at index
-# `start_index`:
 
 #-----------------------------------------------------
 # 19

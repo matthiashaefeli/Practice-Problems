@@ -169,11 +169,55 @@ describe("solutions", function() {
   solution = new Solution();
   expect(solution.ntPrime(1)).toEqual(2)
  });
-})
  it("return the n'th number of prime", function(){
   solution = new Solution();
   expect(solution.ntPrime(5)).toEqual(11)
  });
+ it("return the longest palindrome in a given string", function(){
+  solution = new Solution();
+  expect(solution.longestPalindrome("abcbd")).toEqual("bcb")
+ });
+ it("return the longest palindrome in a given string", function(){
+  solution = new Solution();
+  expect(solution.longestPalindrome("abba")).toEqual("abba")
+ });
+ it("return the longest palindrome in a given string", function(){
+  solution = new Solution();
+  expect(solution.longestPalindrome("abcbdeffe")).toEqual("effe")
+ });
+ it("takes in two numbers. Return the greatest integer that evenly divides both numbers", function(){
+  solution = new Solution();
+  expect(solution.greatestCommonFactor(3, 9)).toEqual(3)
+ });
+ it("takes in two numbers. Return the greatest integer that evenly divides both numbers", function(){
+  solution = new Solution();
+  expect(solution.greatestCommonFactor(16, 24)).toEqual(8)
+ });
+ it("takes in two numbers. Return the greatest integer that evenly divides both numbers", function(){
+  solution = new Solution();
+  expect(solution.greatestCommonFactor(3, 5)).toEqual(1)
+ });
+ it("takes a string and number and gives back a string wih next letter with the number in abc", function(){
+  solution = new Solution();
+  expect(solution.nextLetter(3, "abc")).toEqual("cde")
+ });
+ it("takes a string and number and gives back a string wih next letter with the number in abc", function(){
+  solution = new Solution();
+  expect(solution.nextLetter(2, "azz")).toEqual("cbb")
+ });
+ it("akes in a string and returns the number of letters that appear more than once in the string", function(){
+  solution = new Solution();
+  expect(solution.numRepeats("abdbc")).toEqual(1)
+ });
+ it("akes in a string and returns the number of letters that appear more than once in the string", function(){
+  solution = new Solution();
+  expect(solution.numRepeats("abab")).toEqual(2)
+ });
+ it("akes in a string and returns the number of letters that appear more than once in the string", function(){
+  solution = new Solution();
+  expect(solution.numRepeats("abcd")).toEqual(0)
+ });
+})
 
 
 

@@ -168,7 +168,6 @@ for(var i = 2; i < number; i++) {
     return number > 1;
 };
 
-
 Solution.prototype.ntPrime = function(number){
 	var primeArray = []
 	for (var i = 2; primeArray.length < number; i++){
@@ -178,6 +177,10 @@ Solution.prototype.ntPrime = function(number){
 	}
 	return primeArray[number-1]
 };
+
+Solution.prototype.longestPalindrome = function(string){
+	
+}
 
 
 
