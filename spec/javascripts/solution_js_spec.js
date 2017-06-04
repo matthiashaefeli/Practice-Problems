@@ -205,15 +205,15 @@ describe("solutions", function() {
   solution = new Solution();
   expect(solution.nextLetter(2, "azz")).toEqual("cbb")
  });
- it("akes in a string and returns the number of letters that appear more than once in the string", function(){
+ it("takes in a string and returns the number of letters that appear more than once in the string", function(){
   solution = new Solution();
   expect(solution.numRepeats("abdbc")).toEqual(1)
  });
- it("akes in a string and returns the number of letters that appear more than once in the string", function(){
+ it("takes in a string and returns the number of letters that appear more than once in the string", function(){
   solution = new Solution();
   expect(solution.numRepeats("abab")).toEqual(2)
  });
- it("akes in a string and returns the number of letters that appear more than once in the string", function(){
+ it("takes in a string and returns the number of letters that appear more than once in the string", function(){
   solution = new Solution();
   expect(solution.numRepeats("abcd")).toEqual(0)
  });

@@ -219,6 +219,10 @@ Solution.prototype.nextLetter = function(number, string){
 	return newString.join("")
 };
 
+Solution.prototype.numRepeats = function(string){
+	
+};
+
 
 
 
