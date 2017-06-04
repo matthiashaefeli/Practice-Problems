@@ -203,7 +203,21 @@ Solution.prototype.greatestCommonFactor = function(number1, number2){
 	}
 };
 
-
+Solution.prototype.nextLetter = function(number, string){
+	var alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+	var newIndex = 0
+	var newString = []
+	string.split("").forEach(function(letter){
+		newIndex = alphabet.indexOf(letter)+number
+		if (newIndex > alphabet.length){
+			newIndex = newIndex - alphabet.length
+			newString.push(alphabet[newIndex])
+		}else {
+			newString.push(alphabet[newIndex])
+		}
+	})
+	return newString.join("")
+};
 
 
 

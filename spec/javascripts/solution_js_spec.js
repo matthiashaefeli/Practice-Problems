@@ -199,7 +199,7 @@ describe("solutions", function() {
  });
  it("takes a string and number and gives back a string wih next letter with the number in abc", function(){
   solution = new Solution();
-  expect(solution.nextLetter(3, "abc")).toEqual("cde")
+  expect(solution.nextLetter(3, "abc")).toEqual("def")
  });
  it("takes a string and number and gives back a string wih next letter with the number in abc", function(){
   solution = new Solution();
