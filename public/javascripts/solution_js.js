@@ -179,8 +179,32 @@ Solution.prototype.ntPrime = function(number){
 };
 
 Solution.prototype.longestPalindrome = function(string){
-	
-}
+	var new_string = ""
+	var result = ""
+	for (var i = 0; i < string.length+1; i++){
+		for (var itwo = 0; itwo < string.length+1; itwo++){
+			if (this.palindrome(string.slice(i, itwo))) {
+				newString = string.slice(i, itwo)
+				if (newString.length > result.length) {
+					result = newString
+				}
+			}
+		}
+	}
+	return result
+};
+
+Solution.prototype.greatestCommonFactor = function(number1, number2){
+	var index = number1
+	for (var i = index; index > 0; index--){
+		if ((number2%index) == 0 && (number1%index) == 0){
+			return index
+		}
+	}
+};
+
+
+
 
 
 
